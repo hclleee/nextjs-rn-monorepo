@@ -20,7 +20,7 @@ const Title = Styled.Text`
 `;
 
 
-export default function App() {
+export function App() {
   console.log(Platform.OS);
   return (
     <Container>

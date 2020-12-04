@@ -3,15 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "concurrently \"yarn start\" \"react-native run-android --no-packager\"",
+    "ios": "concurrently \"yarn start\" \"react-native run-ios --no-packager\"",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@nextjs-rn-monorepo/app": "0.0.1",
     "react": "16.13.1",
-    "react-native": "0.63.3"
+    "react-native": "0.63.3",
+    "styled-components": "5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
