@@ -1,4 +1,4 @@
-import * as RN from 'react-native';
+import * as RN from 'react-native'
 
 declare module 'react-native' {
   namespace AppRegistry {

@@ -1,3 +1,3 @@
-import SubTitle from './SubTitle.native';
+import SubTitle from './SubTitle.native'
 
-export default SubTitle;
+export default SubTitle

@@ -1,11 +1,9 @@
-const withPlugins = require('next-compose-plugins');
-const withTM = require('next-transpile-modules')(
-  [
-    "react-native",
-    "styled-components",
-    '@nextjs-rn-monorepo/app',
-  ],
-);
+const withPlugins = require('next-compose-plugins')
+const withTM = require('next-transpile-modules')([
+  'react-native',
+  'styled-components',
+  '@nextjs-rn-monorepo/app',
+])
 
 module.exports = withPlugins([withTM], {
   webpack(config) {
@@ -24,6 +22,6 @@ module.exports = withPlugins([withTM], {
       '.jsx',
       ...config.resolve.extensions,
     ]
-    return config;
-  }
-});
+    return config
+  },
+})

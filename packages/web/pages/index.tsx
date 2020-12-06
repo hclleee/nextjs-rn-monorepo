@@ -1,3 +1,3 @@
-import { App } from '@nextjs-rn-monorepo/app';
+import { App } from '@nextjs-rn-monorepo/app'
 
-export default App;
+export default App
